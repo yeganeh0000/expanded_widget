@@ -1,5 +1,8 @@
 
+import 'package:expanded_widget/constants.dart';
 import 'package:flutter/material.dart';
+
+
 
 class IconContent extends StatelessWidget {
   final IconData ? icon;
@@ -22,12 +25,9 @@ class IconContent extends StatelessWidget {
 
         Text(
           label!,
-          style: TextStyle(
-            color: Color(0xFF8D8E98),
-            fontSize: 24
-          ),
-        )
-
+          style:
+              kLabelTextStyle
+        ),
       ],
     );
   }

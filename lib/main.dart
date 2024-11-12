@@ -15,6 +15,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
+        sliderTheme: SliderTheme.of(context).copyWith(
+          thumbShape: RoundSliderThumbShape(enabledThumbRadius: 18),
+          overlayShape: RoundSliderOverlayShape(overlayRadius: 10),
+          activeTrackColor: Colors.white,
+          inactiveTrackColor: Colors.grey,
+          thumbColor: Color(0xFFEB1535),
+          overlayColor: Color(0x15EB1555),
+          trackHeight: 2
+        ),
         primaryColor: Color(0xFF0A0D22),
         scaffoldBackgroundColor: Color(0xFF0A0D22)
       ),
